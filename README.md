@@ -57,7 +57,7 @@ This is a Weather App that allows users to search for any city and view real-tim
 ---
 
 ## Live Demo
-(https://github.com/prinz/iyf-s10-week-06-prinzjames)
+(https://github.com/prinzjames/iyf-s10-week-06-prinzjames)
 
 ---
 
