@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌦 Pro Weather App</h1>
+
+  <form id="searchForm">
+    <input type="text" id="cityInput" placeholder="Enter city..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="controls">
+    <button id="locationBtn">📍 Use My Location</button>
+    <button id="toggleUnit">🌡 Switch °C/°F</button>
+  </div>
+
+  <div id="loading" class="hidden">Loading...</div>
+  <div id="error" class="hidden"></div>
+
+  <div id="weather" class="hidden">
+    <h2 id="cityName"></h2>
+    <p id="temp"></p>
+    <p id="description"></p>
+    <p id="details"></p>
+
+    <h3>📊 Forecast</h3>
+    <div id="forecast"></div>
+
+    <h3>📈 Temperature Trend</h3>
+    <canvas id="chart" width="300" height="150"></canvas>
+
+    <h3>🧠 AI Weather Assistant</h3>
+    <p id="aiAdvice"></p>
+
+    <h3>📜 Search History</h3>
+    <ul id="history"></ul>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
